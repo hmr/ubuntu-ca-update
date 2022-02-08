@@ -1,4 +1,4 @@
-# ubuntu-ca-update
+# Fix "curl: (60) SSL certificate" problem
 
 If you encount
 
@@ -25,11 +25,11 @@ ERROR: The certificate of 'somewhere.net' doesn't have a known issuer.
 
 This may be caused by an outdated intermediate certificate of Let's Encrypt.
 
-This utility updates Let's Encrypt CA cerificate for Debian and Ubuntu.
+This utility downloads the new certificate from Let's Encrypt and update system setting on Debian or Ubuntu.
 
 ## How to use
 
-On your debian or ubuntu system, do `sudo ./ca-update`.
+On your debian or ubuntu system, simply do `sudo ./ca-update`.
 
 ### Prerequisites
 
