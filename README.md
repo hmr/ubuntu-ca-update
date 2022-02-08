@@ -2,7 +2,7 @@
 
 If you encount
 
-```sh
+```log
 ❯ curl 'https://somewhere.net'
 curl: (60) SSL certificate problem: unable to get local issuer certificate
 More details here: https://curl.se/docs/sslcerts.html
@@ -14,7 +14,7 @@ how to fix it, please visit the web page mentioned above.
 
 or
 
-```sh
+```log
 ❯ wget 'https://somewhere.net'
 --2022-02-09 06:56:32--  https://somewhere.net/
 Resolving somewhere.net (somewhere.net)...
@@ -29,7 +29,7 @@ This utility downloads the new certificate from Let's Encrypt and updates system
 
 ## How to use
 
-On your debian or ubuntu system, simply do `sudo ./ca-update`.
+On your debian or ubuntu system, simply do `sudo ./ca-update.bash`.
 
 ### Prerequisites
 
