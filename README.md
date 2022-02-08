@@ -25,7 +25,7 @@ ERROR: The certificate of 'somewhere.net' doesn't have a known issuer.
 
 This may be caused by an outdated intermediate certificate of Let's Encrypt.
 
-This utility downloads the new certificate from Let's Encrypt and update system setting on Debian or Ubuntu.
+This utility downloads the new certificate from Let's Encrypt and updates system setting on Debian or Ubuntu.
 
 ## How to use
 
