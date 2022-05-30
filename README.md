@@ -1,6 +1,6 @@
-# Fix "curl: (60) SSL certificate" problem
+# Fix curl or wget SSL certificate problem
 
-If you encount
+If you encounter errors below:
 
 ```log
 ❯ curl 'https://somewhere.net'
