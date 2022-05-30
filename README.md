@@ -1,4 +1,4 @@
-# Fix curl or wget SSL certificate problem
+# Fix SSL certificate problem of curl/wget on Debian/Ubuntu
 
 If you encounter errors below:
 
