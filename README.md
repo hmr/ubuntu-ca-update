@@ -19,8 +19,9 @@ or
 --2022-02-09 06:56:32--  https://somewhere.net/
 Resolving somewhere.net (somewhere.net)...
 Connecting to somewhere.net (somewhere.net)... connected.
-ERROR: The certificate of 'somewhere.net' is not trusted.
-ERROR: The certificate of 'somewhere.net' doesn't have a known issuer.
+ERROR: cannot verify somewhere.net's certificate, issued by ‘CN=E6,O=Let's Encrypt,C=US’:
+  Unable to locally verify the issuer's authority.
+To connect to somewhere.net insecurely, use `--no-check-certificate'.
 ```
 
 This may be caused by an outdated intermediate certificate of Let's Encrypt.
@@ -30,6 +31,12 @@ This utility downloads the new certificate from Let's Encrypt and updates system
 ## How to use
 
 On your debian or ubuntu system, simply do `sudo ./ca-update.bash`.
+
+### Mechanism
+
+- Download cert from Let's Encrypt web site into /use/local/share/ca-certificates/
+- Change the filename according to Subject of the cert
+- Run update-ca-certicates to make symbolic links into /etc/ssl/certs/
 
 ### Prerequisites
 
